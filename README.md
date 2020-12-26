@@ -1,0 +1,2 @@
+# opencvutils
+Useful opencv utilities
