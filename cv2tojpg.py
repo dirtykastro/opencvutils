@@ -19,7 +19,7 @@ if Path(file_path).exists() and Path(file_path).is_dir() == False:
     if file_extension in jpg_extensions : 
         print ("File %s is already jpg" % (Path(file_path).name))
     else:
-        image = cv2.imread(file_path)
+        image = cv2.imread(file_path, cv2.IMREAD_UNCHANGED)
         cv2.imwrite(file_name + ".jpg", image)
         
 
